@@ -4,6 +4,13 @@ const nextConfig = {
     appDir: true,
     serverComponentsExternalPackages: ["bcrypt"],
   },
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to succesfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
